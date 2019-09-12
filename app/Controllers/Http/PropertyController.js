@@ -20,7 +20,7 @@ class PropertyController {
     return property;
   }
 
-  async store({ request, auth, response }) {
+  async store({ request, auth }) {
     const { id } = auth.user;
     const data = request.only([
       'title',

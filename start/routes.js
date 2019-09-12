@@ -2,8 +2,8 @@
 
 const Route = use('Route');
 
-Route.post('/users', 'UserController.create');
-Route.post('/sessions', 'SessionController.create');
+Route.post('/users', 'UserController.store');
+Route.post('/sessions', 'SessionController.store');
 
 Route.resource('properties', 'PropertyController')
   .apiOnly()
